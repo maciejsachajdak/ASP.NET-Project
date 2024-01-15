@@ -1,8 +1,9 @@
-using System.Configuration;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Project.Areas.Identity.Data;
 using Project.Data;
+
+namespace Project;
 
 public class Program
 {
@@ -74,20 +75,20 @@ public class Program
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-            string email = "darekadminadmin@admin.com";
-            string password = "Darek123!";
+            string email = "johnadminadmin@admin.com";
+            string password = "John123!";
 
             if (await userManager.FindByEmailAsync(email) == null)
             {
                 var user = new ApplicationUser();
-                user.Login = "DarekAdmin";
-                user.name = "Darek";
-                user.surname = "Radwan";
-                user.address = "Darkowo";
+                user.Login = "JohnAdmin";
+                user.name = "John";
+                user.surname = "Wick";
+                user.address = "Lea 200, Cracov";
                 user.club = 2;
                 user.sex = "Male";
                 user.birthdate = DateOnly.Parse("03-02-2000");
-                user.Email = "darekadminadmin@admin.com";
+                user.Email = "johnadminadmin@admin.com";
                 user.UserName = user.Login;
                 user.Role = "Admin";
 
@@ -101,20 +102,20 @@ public class Program
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-            string email = "andrzejek@member.com";
-            string password = "Andrzej123!";
+            string email = "kevin@member.com";
+            string password = "Kevin123!";
 
             if (await userManager.FindByEmailAsync(email) == null)
             {
                 var user = new ApplicationUser();
-                user.Login = "Andrzejek";
-                user.name = "Andrzej";
-                user.surname = "Sarkowicz";
-                user.address = "Andrzejkowiczowo";
+                user.Login = "Kevin";
+                user.name = "Kevin";
+                user.surname = "HomeAlone";
+                user.address = "671 Lincoln Avenue in Winnetka, Illinois";
                 user.club = 3;
                 user.sex = "Male";
                 user.birthdate = DateOnly.Parse("15-05-2001");
-                user.Email = "andrzejek@member.com";
+                user.Email = "kevin@member.com";
                 user.UserName = user.Login;
                 user.Role = "Member";
 
@@ -128,20 +129,20 @@ public class Program
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-            string email = "mikolajradwan@user.com";
-            string password = "Radwan2137!";
+            string email = "james@member.com";
+            string password = "James123!";
 
             if (await userManager.FindByEmailAsync(email) == null)
             {
                 var user = new ApplicationUser();
-                user.Login = "Radwan";
-                user.name = "Mikołaj";
-                user.surname = "Radwan";
-                user.address = "Warszawa";
+                user.Login = "James";
+                user.name = "Smith";
+                user.surname = "James";
+                user.address = "High Street 30 Las Vegas";
                 user.club = 4;
                 user.sex = "Male";
-                user.birthdate = DateOnly.Parse("13-06-2000");
-                user.Email = "mikolajradwan@user.com";
+                user.birthdate = DateOnly.Parse("20-04-1990");
+                user.Email = "james@member.com";
                 user.UserName = user.Login;
                 user.Role = "Member";
 

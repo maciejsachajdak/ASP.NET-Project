@@ -12,28 +12,28 @@ namespace Project.Models
                 {
                     ID = 1,
                     name = "Crossfit Box",
-                    city = "Kraków",
+                    city = "Cracow",
                     street = "Długa 12"
                 },
                 new Club
                 {
                     ID = 2,
                     name = "Hells gym",
-                    city = "Kraków",
+                    city = "Cracow",
                     street = "Krótka 65C"
                 },
                 new Club
                 {
                     ID = 3,
                     name = "Poland Mountain",
-                    city = "Warszawa",
+                    city = "Warsaw",
                     street = "Pokątna 12"
                 },
                 new Club
                 {
                     ID = 4,
-                    name = "Rainbow Park",
-                    city = "Sosnowiec",
+                    name = "Polish Golds Gym",
+                    city = "Warsaw",
                     street = "Sezamkowa 2137"
                 }
             );
