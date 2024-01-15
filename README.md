@@ -34,8 +34,8 @@ This is a simple net aplication project which implements funcionality for a gym 
 
 ## To check funcionality of the project please use one of the accounts below:
 * Basic user:
-   * Login: Andrzejek
-   * Password: Andrzej123!
+   * Login: _Andrzejek_
+   * Password: _Andrzej123!_
 * Admin user:
-   * Login: DarekAdmin
-   * Password: Darek123!
+   * Login: _DarekAdmin_
+   * Password: _Darek123!_
