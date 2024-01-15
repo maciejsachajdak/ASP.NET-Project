@@ -30,6 +30,13 @@ This is a simple net aplication project which implements funcionality for a gym 
          * Now launch your Code and enjoy with our service (If you want use VisualStudio, the schema is similar, choose Clone Repository and follow instructions like in Rider)
 
 ## About project:
+### To check funcionality of the project please use one of the accounts below:
+         Basic user:
+            Login: Kevin
+            Password: Kevin123!
+         Admin user:
+            Login: JohnAdmin
+            Password: John123!
 * On the first page, there is a login panel that allows us to log in to a privileged admin account or a regular user account. If we don't have an account, we can click on the link that takes us to the registration page. 
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/cf5fec1e-b757-48e1-b65a-f762ce062f80)
 
@@ -54,11 +61,3 @@ This is a simple net aplication project which implements funcionality for a gym 
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/e944555b-d126-4b81-814b-9296f7fe74e3)
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/67f6675e-0f44-4909-8e40-6382f229c268)
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/3a72b474-f6a1-4803-b077-e4b30d5bda25)
-
-## To check funcionality of the project please use one of the accounts below:
-* Basic user:
-   * Login: _Kevin_
-   * Password: _Kevin123!_
-* Admin user:
-   * Login: _JohnAdmin_
-   * Password: _John123!_
