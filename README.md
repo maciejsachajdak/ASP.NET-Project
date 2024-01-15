@@ -18,6 +18,7 @@ This is a simple net aplication project which implements funcionality for a gym 
         * Paste link copied before and select Path on you computer where you want deploy project, click "Trust Project" and wait few seconds
       ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/21fd00a7-b582-421d-8612-a7abb56f358a)
           * And the
+
 ## About project:
 * On the homepage, there is a login panel that allows us to log in to a privileged admin account or a regular user account. If we don't have an account, we can click on the link that takes us to the registration page.
 
@@ -30,3 +31,11 @@ This is a simple net aplication project which implements funcionality for a gym 
 * In the section dedicated to reviews, we can view clubs and see reviews assigned to specific clubs. We can also add reviews, which involves selecting a rating from 1 to 5 and providing a textual opinion. The administrator does not have access to adding reviews.
 
 * In the management panel, available only to the administrator, we can browse all registered users, excluding the administrator account. From this level, the administrator can edit user data or delete users, but cannot edit user passwords. The administrator can also create new users, following the same process as registration, but the administrator does not set a password for the new account; instead, it is set to a default value.
+
+## To check funcionality of the project please use one of the accounts below:
+* Basic user:
+   * Login: 
+   * Password
+* Admin user:
+   * Login:
+   * Password:
