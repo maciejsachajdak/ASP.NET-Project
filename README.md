@@ -45,7 +45,7 @@ This is a simple net aplication project which implements funcionality for a gym 
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/c428f14b-4ab5-406a-8800-b24350cb9816)
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/63354cfd-dc0b-49c6-9451-10a74c913d80)
 
-* In the section dedicated to reviews, we can view clubs and see reviews assigned to specific clubs. We can also add reviews, which involves selecting a rating from 1 to 5 and providing a textual opinion. The administrator does not have access to adding reviews.
+* In the club section, we can view clubs and see reviews assigned to specific clubs. We can also add reviews, which involves selecting a rating from 1 to 5 and providing a textual opinion. The administrator does not have access to adding reviews.
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/428845bb-3fd2-4a71-966c-fcffadbc24e1)
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/9b8dc4c6-9e18-4712-8654-17e96977afee)
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/38c932b8-f18c-4045-b0d8-9efd4da2bcc0)
