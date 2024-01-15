@@ -1,5 +1,5 @@
 # Project
-This is a simple net aplication project which implements funcionality for a gym website.
+This is a simple net aplication project which implements funcionality for a gym website. All user data is validated and stored in a database connected to the entire application.
 ## Main Technologies:
 *  ASP.NET framework
 *  Entity Framework
@@ -9,15 +9,25 @@ This is a simple net aplication project which implements funcionality for a gym 
 *  Authorization
 
 ## How to deploy our service:
-*  First you must click Code option in the top right corner above list of the files. Then you must copy the URL to this Repo
+*  First you must click Code option in the top right corner above list of the files. Then you must copy the URL to this repository
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/63004507-0a57-44b1-8161-7127b360a9f8)
 *  In the next step you must open your programming enviromental with C# and ASP.NET 8.0 support, we suggest to use VisualStudio or JetBrains Rider
     * In Rider:
         * First select Git options and click Clone
       ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/beb187d8-82ea-417c-9246-f982920ffcd2)
-        * Paste link copied before and select Path on you computer where you want deploy project, click "Trust Project" and wait few seconds
+        * Paste link copied before and select Path on you computer where you want deploy project, click "Trust Project" and wait
       ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/21fd00a7-b582-421d-8612-a7abb56f358a)
-          * And the
+        * Now you must configruate _appsetting.json_. You must change data in underlined instruction, Change blank place to name of ypur SQL Server. Make shure that you dont have any database named _Project_, if you have you must change parameter after _database=_ in underlined code, you must chose new database name.
+      ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/30b781ce-1d76-4ddb-a961-14e92d41bce0)
+         * In the next step you must add migration to your project to do this thing in terminal:
+               * Make sure that you are in Project folder, if not write: _cd ./your_project_dirrectory_, then make sure that you have installed Entity Framework Core CLI tool                    named dotnet ef, if not: _dotnet tool install --global dotnet-ef_ write it to Terminal
+               * Then copy this 4 instruction into Console:
+
+                  dotnet ef migrations add ApplicationDBContextConnection -c ApplicationDBContext 
+                  dotnet ef migrations add ApplicationDBContextConnection -c AnotherDBContext
+                  dotnet ef database update -c ApplicationDBContext
+                  dotnet ef database update -c AnotherDBContext
+         * Now launch your Code and enjoy with our service (If you want use VisualStudio, the schema is similar, choose Clone Repository and follow instructions like in Rider)
 
 ## About project:
 * On the homepage, there is a login panel that allows us to log in to a privileged admin account or a regular user account. If we don't have an account, we can click on the link that takes us to the registration page.
