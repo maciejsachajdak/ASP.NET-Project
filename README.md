@@ -15,9 +15,18 @@ This is a simple net aplication project which implements funcionality for a gym 
     * In Rider:
         * First select Git options and click Clone
       ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/beb187d8-82ea-417c-9246-f982920ffcd2)
-        * Paste link copied before and select Path on you computer where you want deploy project, click "Trust Project" and wait few seconds
+        * Paste link copied before and select Path on you computer where you want deploy project, click "Trust Project" and wait
       ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/21fd00a7-b582-421d-8612-a7abb56f358a)
-          * And the
+        * Now you must configruate _appsetting.json_. You must change data in underlined instruction, Change blank place to name of ypur SQL Server.
+      ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/30b781ce-1d76-4ddb-a961-14e92d41bce0)
+         * In the next step you must add migration to your project to do this thing in terminal:
+               * Make sure that you are in Project folder, if not write: _cd ./your_project_dirrectory_, than make sure that you have installed Entity Framework Core CLI tool                    named dotnet ef, if not: _dotnet tool install --global dotnet-ef_ write it to Terminal
+               * Then copy this 4 instruction into Console:
+
+                  dotnet ef migrations add ApplicationDBContextConnection -c ApplicationDBContext 
+                  dotnet ef migrations add ApplicationDBContextConnection -c AnotherDBContext
+                  dotnet ef database update -c ApplicationDBContext
+                  dotnet ef database update -c AnotherDBContext
 
 ## About project:
 * On the homepage, there is a login panel that allows us to log in to a privileged admin account or a regular user account. If we don't have an account, we can click on the link that takes us to the registration page.
