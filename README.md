@@ -20,7 +20,7 @@ This is a simple net aplication project which implements funcionality for a gym 
         * Now you must configruate _appsetting.json_. You must change data in underlined instruction, Change blank place to name of ypur SQL Server.
       ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/30b781ce-1d76-4ddb-a961-14e92d41bce0)
          * In the next step you must add migration to your project to do this thing in terminal:
-               * Make sure that you are in Project folder, if not write: _cd ./your_project_dirrectory_, than make sure that you have installed Entity Framework Core CLI tool                    named dotnet ef, if not: _dotnet tool install --global dotnet-ef_ write it to Terminal
+               * Make sure that you are in Project folder, if not write: _cd ./your_project_dirrectory_, then make sure that you have installed Entity Framework Core CLI tool                    named dotnet ef, if not: _dotnet tool install --global dotnet-ef_ write it to Terminal
                * Then copy this 4 instruction into Console:
 
                   dotnet ef migrations add ApplicationDBContextConnection -c ApplicationDBContext 
