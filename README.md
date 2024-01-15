@@ -1,5 +1,5 @@
 # Project
-This is a simple net aplication project which implements funcionality for a gym website. Our website is transparent and intuitive, making it easy for users to navigate. It incorporates essential features and add-ons to provide customers with the best possible experience. The site includes all the necessary functionalities and extras to ensure optimal user satisfaction.
+This is a simple net aplication project which implements funcionality for a gym website. Our website is transparent and intuitive, making it easy for users to navigate. It incorporates essential features and add-ons to provide customers with the best possible experience. The site includes all the necessary functionalities and extras to ensure optimal user satisfaction. All user data is validated and stored in a database connected to the entire application.
 ## Main Technologies:
 *  ASP.NET framework
 *  Entity Framework
