@@ -23,13 +23,6 @@ namespace Project.Controllers
             return View(_contex.Clubs.ToList());
         }
 
-        public async Task<ActionResult> Details(string id)
-        {
-            var user = await _userManager.FindByIdAsync(id);
-
-            return View(user);
-        }
-
         public ActionResult OpinionList(int id)
         {
             ViewBag.ClubID = id;

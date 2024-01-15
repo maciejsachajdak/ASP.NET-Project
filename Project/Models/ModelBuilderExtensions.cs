@@ -3,9 +3,9 @@ using Project.Areas.Identity.Data;
 
 namespace Project.Models
 {
-    public static class ModelBuilderExtensions
+    public class ModelBuilderExtensions
     {
-        public static void Seed(this ModelBuilder modelBuilder)
+        public void Seed(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Club>().HasData(
                 new Club

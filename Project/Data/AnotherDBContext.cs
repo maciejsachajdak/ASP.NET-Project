@@ -12,7 +12,8 @@ namespace Project.Data
         public DbSet<Opinion> Opinions { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Seed();
+            var modelBuilderExtensions = new ModelBuilderExtensions();
+            modelBuilderExtensions.Seed(modelBuilder);
         }
     }
 }
