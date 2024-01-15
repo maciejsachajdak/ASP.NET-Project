@@ -28,7 +28,7 @@ public class ApplicationUser : IdentityUser
 
     [Microsoft.Build.Framework.Required]
     [PersonalData]
-    [Column(TypeName = "nvarchar(30)")]
+    [Column(TypeName = "nvarchar(50)")]
     public string address { get; set; }
 
     [Microsoft.Build.Framework.Required]

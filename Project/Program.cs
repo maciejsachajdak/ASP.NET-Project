@@ -111,7 +111,7 @@ public class Program
                 user.Login = "Kevin";
                 user.name = "Kevin";
                 user.surname = "HomeAlone";
-                user.address = "671 Lincoln Avenue in Winnetka, Illinois";
+                user.address = "Mickiewicza 82, Warsaw";
                 user.club = 3;
                 user.sex = "Male";
                 user.birthdate = DateOnly.Parse("15-05-2001");
@@ -138,7 +138,7 @@ public class Program
                 user.Login = "James";
                 user.name = "Smith";
                 user.surname = "James";
-                user.address = "High Street 30 Las Vegas";
+                user.address = "Słowackiego 15, Radom";
                 user.club = 4;
                 user.sex = "Male";
                 user.birthdate = DateOnly.Parse("20-04-1990");

@@ -9,14 +9,13 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
     @if (User.IsInRole("Admin"))
     {
         <h1>Hi Admin</h1>
     }
     else
     {
-        <h1>Non Admin</h1>
+        <h1>Hello Member</h1>
     }
     <p>User ID : @ViewData["UserID"]</p>
 </div>

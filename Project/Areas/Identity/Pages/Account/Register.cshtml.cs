@@ -100,7 +100,7 @@ namespace Project.Areas.Identity.Pages.Account
             /// </summary>
             [Required]
             [Display(Name = "address")]
-            [StringLength(30, ErrorMessage = "max 30.")]
+            [StringLength(50, ErrorMessage = "max 30.")]
             public string address { get; set; }
 
             [Required]
