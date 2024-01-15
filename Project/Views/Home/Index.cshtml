@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Project.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @if (User.IsInRole("Admin"))
+    {
+        <h1>Hi Admin</h1>
+    }
+    else
+    {
+        <h1>Non Admin</h1>
+    }
+    <p>User ID : @ViewData["UserID"]</p>
+</div>
+

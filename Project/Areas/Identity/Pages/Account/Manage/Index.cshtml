@@ -1,0 +1,51 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+<h3>@ViewData["Title"]</h3>
+<div class="row">
+    <div class="col-md-6">
+        <form id="profile-form" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Login" class="form-control" readonly />
+                <label asp-for="Login" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="name" class="form-control" readonly />
+                <label asp-for="name" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="surname" class="form-control" readonly />
+                <label asp-for="surname" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="address" class="form-control" readonly />
+                <label asp-for="address" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Email" class="form-control" readonly />
+                <label asp-for="Email" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="birthdate" class="form-control" readonly />
+                <label asp-for="birthdate" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="sex" class="form-control" readonly />
+                <label asp-for="sex" class="form-label"></label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="club" class="form-control" readonly/>
+                <label asp-for="club" class="form-label"></label>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

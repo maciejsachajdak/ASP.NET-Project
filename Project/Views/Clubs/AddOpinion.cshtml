@@ -1,0 +1,40 @@
+﻿@model Project.Controllers.ClubsController.ClubOpinionViewModel
+
+@{
+    ViewData["Title"] = "Enter new Opinion";
+    Layout = "~/Views/User/_UserLayout.cshtml";
+}
+
+
+<form asp-action="AddOpinion" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Opinion.rateNumber" class="control-label">Enter the number of stars:</label>
+        <div class="slider-container">
+            <span class="slider-label">1</span>
+            <input asp-for="Opinion.rateNumber" type="range" min="1" max="5" step="1" value="3" class="slider-input" />
+            <span class="slider-label">5</span>
+        </div>
+        <span asp-validation-for="Opinion.rateNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Opinion.text" class="control-label">Opinion</label>
+        <input asp-for="Opinion.text" class="form-control" />
+        <span asp-validation-for="Opinion.text" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Opinion.clubID" class="control-label" hidden></label>
+        <input asp-for="Opinion.clubID" class="form-control" value="@Model.Club.ID" hidden />
+        <span asp-validation-for="Opinion.clubID" class="text-danger"></span>
+    </div>
+    <div class="form-group mt-3">
+        <input type="submit" value="Add Opinion" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+}

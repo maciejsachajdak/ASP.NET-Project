@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Project.Models.Club>
+
+@{
+    ViewData["Title"] = "Our Clubs";
+}
+
+<h1>Our Clubs</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Club name
+        </th>
+        <th>
+            Street and City
+        </th>
+        <th>
+            Add Opinion
+        </th>
+        <th>
+            Opinion
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.street) @Html.DisplayFor(model => item.city)
+            </td>
+            @if (User.IsInRole("Member"))
+            {
+                <td>
+                    <a asp-action="AddOpinion" asp-route-id="@item.ID">Add Opinion</a>
+                </td>
+            }
+                else if (User.IsInRole("Admin"))
+            {
+                <td>
+                    Admin cannot add opinions
+                </td>
+            }
+            <td>
+                <a asp-action="OpinionList" asp-route-id="@item.ID">Check opinion about this club</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

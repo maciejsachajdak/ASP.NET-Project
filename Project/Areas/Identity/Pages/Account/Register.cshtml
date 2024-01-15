@@ -1,0 +1,75 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Areas/Identity/Pages/_AuthLayout.cshtml";
+}
+
+<form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+    <h2>Create a new account.</h2>
+    <hr/>
+    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+    <div class="form-floating mb-3">
+        <input asp-for="Input.name" class="form-control" autocomplete="username" aria-required="true" placeholder="John"/>
+        <label asp-for="Input.name">Name</label>
+        <span asp-validation-for="Input.name" class="text-danger"></span>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Input.surname" class="form-control" autocomplete="username" aria-required="true" placeholder="Nowak"/>
+        <label asp-for="Input.surname">Surname</label>
+        <span asp-validation-for="Input.surname" class="text-danger"></span>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Input.address" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com"/>
+        <label asp-for="Input.address">Address</label>
+        <span asp-validation-for="Input.address" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Input.sex" class="control-label">Select sex from list below</label>
+        <select asp-for="Input.sex" class="form-control">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <span asp-validation-for="Input.sex" class="text-danger"></span>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Input.birthdate" class="form-control" autocomplete="off"/>
+        <label asp-for="Input.birthdate">Date of Birth</label>
+        <span asp-validation-for="Input.birthdate" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Input.club" class="control-label">Select club from list below</label>
+        <select asp-for="Input.club" class="form-control">
+            <option value="1">Crossfit Box</option>   
+            <option value="2">Hells gym</option>
+            <option value="3">Poland Mountain</option>
+            <option value="4">Rainbow Park</option>
+        </select>
+        <span asp-validation-for="Input.club" class="text-danger"></span>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Input.Email" class="form-control" autocomplete="Email" aria-required="true" placeholder="Email"/>
+        <label asp-for="Input.Email">Email</label>
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Input.Login" class="form-control" autocomplete="Login" aria-required="true" placeholder="Login"/>
+        <label asp-for="Input.Login">Login</label>
+        <span asp-validation-for="Input.Login" class="text-danger"></span>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password"/>
+        <label asp-for="Input.Password">Password</label>
+        <span asp-validation-for="Input.Password" class="text-danger"></span>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password"/>
+        <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+    </div>
+    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+</form>
+
+@section Scripts {
+}

@@ -1,0 +1,66 @@
+﻿@model Project.Areas.Identity.Data.ApplicationUser
+
+@{
+    ViewData["Title"] = "Edit User Data";
+    Layout = "~/Views/User/_UserLayout.cshtml";
+}
+
+
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id"/>
+    <div class="form-group">
+        <label asp-for="name" class="control-label">Name</label>
+        <input asp-for="name" class="form-control"/>
+        <span asp-validation-for="name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="surname" class="control-label">Surname</label>
+        <input asp-for="surname" class="form-control"/>
+        <span asp-validation-for="surname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control"/>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="address" class="control-label">Address</label>
+        <input asp-for="address" class="form-control"/>
+        <span asp-validation-for="address" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="sex" class="control-label">Select sex  from list below</label>
+        <select asp-for="sex" class="form-control">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <span asp-validation-for="sex" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="birthdate" class="control-label">BirthDate</label>
+        <input asp-for="birthdate" type="date" class="form-control" />
+        <span asp-validation-for="birthdate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="club" class="control-label">Select club from list below</label>
+        <select asp-for="club" class="form-control">
+            <option value="Club1">Crossfit Box</option>
+            <option value="Club2">Hells gym</option>
+            <option value="Club3">Poland Mountain</option>
+            <option value="Club3">Rainbow Park</option>
+        </select>
+        <span asp-validation-for="club" class="text-danger"></span>
+    </div>
+    <div class="form-group mt-3">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+}

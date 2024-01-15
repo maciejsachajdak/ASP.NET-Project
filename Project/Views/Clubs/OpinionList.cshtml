@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Project.Models.Opinion>
+@inject Project.Data.AnotherDBContext Context
+
+@{
+    ViewData["Title"] = "Opinions";
+    int clubID = ViewBag.ClubID ?? 1;
+    var club = Context.Clubs.FirstOrDefault(club1 => club1.ID == clubID);
+}
+
+<h1>Opinion for Club @club.name</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Rate Number
+        </th>
+        <th>
+            Content
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        @if (item.clubID == club.ID)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rateNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.text)
+                </td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+<div>
+    <a asp-action="Index">Back to Club List</a>
+</div>
