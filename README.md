@@ -30,7 +30,7 @@ This is a simple net aplication project which implements funcionality for a gym 
          * Now launch your Code and enjoy with our service (If you want use VisualStudio, the schema is similar, choose Clone Repository and follow instructions like in Rider)
 
 ## About project:
-* On the homepage, there is a login panel that allows us to log in to a privileged admin account or a regular user account. If we don't have an account, we can click on the link that takes us to the registration page. 
+* On the first page, there is a login panel that allows us to log in to a privileged admin account or a regular user account. If we don't have an account, we can click on the link that takes us to the registration page. 
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/120064585/cf5fec1e-b757-48e1-b65a-f762ce062f80)
 
 * On the registration page, we provide necessary information to create an account, including a unique username and a password that must meet security requirements. In case any of the previously mentioned conditions are not met or if any other fields are left incomplete, an appropriate message will be displayed, informing about the missing or incorrect information.
