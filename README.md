@@ -9,7 +9,7 @@ This is a simple net aplication project which implements funcionality for a gym 
 *  Authorization
 
 ## How to deploy our service:
-*  First you must click Code option in the top right corner above list of the files. Then you must copy the URL to this Repo
+*  First you must click Code option in the top right corner above list of the files. Then you must copy the URL to this repository
 ![image](https://github.com/maciejsachajdak/ASP.NET-Project/assets/119767371/63004507-0a57-44b1-8161-7127b360a9f8)
 *  In the next step you must open your programming enviromental with C# and ASP.NET 8.0 support, we suggest to use VisualStudio or JetBrains Rider
     * In Rider:
